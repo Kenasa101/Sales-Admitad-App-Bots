@@ -14,24 +14,8 @@
 - io 
 - openpyxl
 
-Данный проект состоит из следующих сервисов:
-1. Автоматический парсинг купонов, промокодов, товаров более чем 200 магазинов, добавление в базу данных Postgres. Парсинг происходит по API с сайта Admitad с определенным инервалом времени
-2. Сайт на Django, содержащий купоны, промокоды, товары, интегрированный в два Telegram-бота, в которые встроены два Telegram Mini-App. 
-    - Использование индексов ввиду большого количества строк (более 5млн) в базе данных.
-    - Использование сложных запросов Django ORM
-    - Использование полнотекстового поиска по названиям товаров (to_tsvector)
-    - Собственная реализация пагинации страниц
-    - Использование debug toolbar для отслеживания запросов к базе данных
-    - HTML шаблоны + JS, CSS
-    - Использование Telegram Mini-App
-    - Использование Яндекс Метрики для ведения статистики
-3. Telegram-бот (Telegram Mini-App) для купонов и промокодов https://t.me/coupons186_bot
-4. Telegram-бот (Telegram Mini-App) в виде каталога товаров https://t.me/products186_bot
-5. Автоматическая публикация постов в telegram-канал. Публикация полностью настраиваемая. Можно менять интервал между постами, разрешенное время суток для публикаций, использовать беззвучный режим при отправки, мнгновенная отправка промокода или товара и др.
-6. Telegram-бот для управления автоматической публикацией для админов
 
-
-This project consists of the following services:
+                             This project consists of the following services:
 1. Automatic parsing of coupons, promotional codes, products from more than 200 stores, adding to the Postgres database. Parsing occurs via API from the Admitad website with a certain time interval
 2. A Django website containing coupons, promotional codes, products, integrated into two Telegram bots, which have two Telegram Mini-Apps built into them.
     - Using indexes due to the large number of rows (more than 5 million) in the database.
